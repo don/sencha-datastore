@@ -9,9 +9,7 @@ Ext.setup({
 
         var itemTemplate = new Ext.XTemplate(
             '<tpl for=".">',
-                '<div class="person">',
-                    '{name}',
-                '</div>',
+            	'{name}',
             '</tpl>');
 
         var xmlStore = new Ext.data.Store({
