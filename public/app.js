@@ -65,27 +65,6 @@ Ext.setup({
             ]           
         };
         
-        var inlineJsonStore = new Ext.data.JsonStore({
-            model: 'Person',
-            data: [
-                { "id": 1, "name": "Moe" },
-                { "id": 2, "name": "Larry" },
-                { "id": 3, "name": "Curly" }    
-             ]
-        });
-        
-        var inlineJsonPanel = {
-            title: "inlineJson",
-            items: [
-                {
-                    xtype: 'list',
-                    store: inlineJsonStore,
-                    itemTpl: itemTemplate,
-                    singleSelect: true
-                }
-            ]
-        };
-        
         var panel = new Ext.TabPanel({
            tabBar: {
                layout: {
@@ -94,7 +73,7 @@ Ext.setup({
            },
            fullscreen: true,
            cardSwitchAnimation: 'slide',
-           items: [ xmlPanel, jsonPanel, inlineJsonPanel] 
+           items: [ xmlPanel, jsonPanel] 
         });
     }
 });
