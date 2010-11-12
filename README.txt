@@ -1,4 +1,4 @@
-Sencha Touch Data Store Example
+Simple Sencha Touch Data Store Example
 
 Assuming you have Ruby and RubyGems installed
 
