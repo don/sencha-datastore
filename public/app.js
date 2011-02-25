@@ -44,8 +44,7 @@ Ext.setup({
                 type: 'ajax',
                 url: 'data.json',
                 reader: {
-                    type: 'json',
-                    record: 'person'
+                    type: 'json'
                 }               
             },
             autoLoad: true
